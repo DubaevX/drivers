@@ -27,7 +27,7 @@ static void write_to_device(const int fd, const char str[], const size_t len) {
 }
 
 int main() {
-    const char driver_path[] = "/dev/pz4";
+    const char driver_path[] = "/dev/pz4_dev";
 
     const int reader_fd = open(driver_path, O_RDONLY);
     if (reader_fd < 0) {

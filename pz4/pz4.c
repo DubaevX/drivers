@@ -140,7 +140,7 @@ static int __init init(void) {
         return res;
     }
 
-    dev_class = class_create(CLASS_NAME);
+    dev_class = class_create("pz4_class");
     if (IS_ERR(dev_class)) {
         printk(KERN_ERR DRIVER_NAME ": failed to create device class\n");
         res = PTR_ERR(dev_class);
